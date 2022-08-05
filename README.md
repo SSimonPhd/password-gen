@@ -1,2 +1,2 @@
 # password-gen
-JavaScript random password generator web app
+JavaScript password generator web app
