@@ -1,2 +1,2 @@
 # pwd
-JavaScript random password generator
+JavaScript random password generator web app
