@@ -6,13 +6,13 @@ var generateBtn = document.querySelector("#generate");
 // 1. Prompt user for critera (pw length, char type)
 // 2. Validate input (between 8 - 128 and at least one char type)
 // 3. Generate pw
-
+var userChoice = window.prompt("Chose length between 8 and 120 characters");
 
 
 
 // 4. Display pw
 
-    return "#password";
+    return "password";
   }
 
 // Write password to the #password input (needs generatePassword function to display to screen)
