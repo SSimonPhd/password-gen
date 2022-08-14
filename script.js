@@ -1,35 +1,21 @@
-// Assignment code here
-var pwLength = 8;
-var charType = "Lower Case";
-
-var options = [8 - 128];
-
-var typeOptions = ["Upper case", "Lower case", "Number", "Special Character"];
-
-var generatePassword = function() {
-  // Ask user for their choice
-  var userChoice = window.prompt("Enter length 8 - 120:");
-
-
-  // If user pressed Cancel, immediately end function
-  if (!userChoice) {
-    return;
-  } 
-  else { 
-    
-  var userChoice2 = window.prompt("Enter character type Lower Case, Upper Case, Number, or Special Character:");
-  }
-}
-  // Get random index from array of options
-  var index = Math.floor(Math.random() * options.length);
-  var computerChoice = options[index];
-
-  window.alert("Your password is " + computerChoice);
-
-// Get references to the #generate element
+// Starter code (this generates the button)
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+  function generatePassword() {
+    console.log("Button working")
+// 1. Prompt user for critera (pw length, char type)
+// 2. Validate input (between 8 - 128 and at least one char type)
+// 3. Generate pw
+
+
+
+
+// 4. Display pw
+
+    return "#password";
+  }
+
+// Write password to the #password input (needs generatePassword function to display to screen)
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -38,5 +24,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Add event listener to generate button (on click writes password)
 generateBtn.addEventListener("click", writePassword);
