@@ -1,7 +1,14 @@
+:root {
+  --border-radius: 10px;
+  --box-shadow: 4px 4px #268ef0;
+}
+
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html,
@@ -14,7 +21,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #141414;
 }
 
 .wrapper {
@@ -23,15 +30,31 @@ body {
   padding-right: 20px;
 }
 
+h1 {
+  display: inline-block;
+  font-size: 72px;
+  font-weight: 200;
+  letter-spacing: 5px;
+  color: #268ef0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #141414;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: whitesmoke;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: #5A6F8E;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -40,6 +63,13 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.card-header .pw {
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .card-header::after {
@@ -74,7 +104,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #141414;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;

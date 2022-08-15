@@ -57,7 +57,7 @@ var generateBtn = document.querySelector("#generate");
     // 4. Display pw
 
     // Asks for user input
-    enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
+    enter = parseInt(prompt("What length is your password? Choose between 8 and 128"));
 
     // User validation 
     if (!enter) {
@@ -69,16 +69,16 @@ var generateBtn = document.querySelector("#generate");
         enter = parseInt(prompt("You must choose between 8 and 128"));
 
     } else {
-        // Once validated
-        confirmNumber = confirm("Include numbers?");
+        // Once char length is vvalidated
         confirmLowercase = confirm("Include lower case letters?");
         confirmUppercase = confirm("Include uppercase letters?");
+        confirmNumber = confirm("Include numbers?");
         confirmCharacter = confirm("Include special characters?");
     };
 
     // Else if for 4 invalid options
     if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
-        choices = alert("You must choose a criteria!");
+        choices = alert("You must choose at least one option!");
 
     }
     //  Else ifs to determine choices
