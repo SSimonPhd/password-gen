@@ -104,9 +104,9 @@ header {
   border: none;
   background-color: #141414;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+  box-shadow: whitesmoke 0px 1px 6px 0px whitesmoke 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: whitesmoke;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
