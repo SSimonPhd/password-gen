@@ -117,6 +117,10 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+  background: #353535
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
