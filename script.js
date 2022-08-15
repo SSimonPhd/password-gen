@@ -150,20 +150,20 @@ var generateBtn = document.querySelector("#generate");
 
 // Password to screen
 function UserInput(ps) {
-  document.getElementById("password").textContent = ps;
+    document.getElementById("password").textContent = ps;
 
-// Write password to the #password input (needed generatePassword function to screen)
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  // Write password to the #password input (needed generatePassword function to screen)
+  function writePassword() {
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-}
-
-// Event listener to generate button (on click writes password)
-generateBtn.addEventListener("click", writePassword);{
-  function myfunction() {
-    alert (password);
+    passwordText.value = password;
   }
-}
+
+  // Event listener to generate button (on click writes password)
+  generateBtn.addEventListener("click", writePassword);{
+    function myfunction() {
+      alert (password);
+    }
+  }
 }
