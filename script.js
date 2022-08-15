@@ -57,7 +57,7 @@ var generateBtn = document.querySelector("#generate");
     // 4. Display pw
 
     // Asks for user input
-    enter = parseInt(prompt("What length is your password? Choose between 8 and 128"));
+    enter = parseInt(prompt("What length is your password? Enter a number between 8 and 128"));
 
     // User validation 
     if (!enter) {
@@ -66,11 +66,11 @@ var generateBtn = document.querySelector("#generate");
 
         // Validate user input
         // Begin prompts
-        enter = parseInt(prompt("You must choose between 8 and 128"));
+        enter = parseInt(prompt("You need to enter a number between 8 and 128"));
 
     } else {
-        // Once char length is vvalidated
-        confirmLowercase = confirm("Include lower case letters?");
+        // Once char length is validated
+        confirmLowercase = confirm("Include lowercase letters?");
         confirmUppercase = confirm("Include uppercase letters?");
         confirmNumber = confirm("Include numbers?");
         confirmCharacter = confirm("Include special characters?");
@@ -78,7 +78,7 @@ var generateBtn = document.querySelector("#generate");
 
     // Else if for 4 invalid options
     if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
-        choices = alert("You must choose at least one option!");
+        choices = alert("You need to OK at least one option!");
 
     }
     //  Else ifs to determine choices
@@ -152,7 +152,7 @@ var generateBtn = document.querySelector("#generate");
 function UserInput(ps) {
     document.getElementById("password").textContent = ps;
 
-  // Write password to the #password input (needed generatePassword function to screen)
+  // Write password to the #password input (generatePassword function to screen)
   function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
