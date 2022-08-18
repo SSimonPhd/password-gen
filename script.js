@@ -84,7 +84,6 @@ var generateBtn = document.querySelector("#generate");
     //  Else ifs to determine choices
     // Else if for 4 valids
     else if (confirmCharacter && confirmNumber && confirmUppercase && confirmLowercase) {
-
         choices = character.concat(number, alpha, alpha2);
     }
     // Else if for 3 valids
@@ -103,20 +102,21 @@ var generateBtn = document.querySelector("#generate");
     // Else if for 2 valids 
     else if (confirmCharacter && confirmNumber) {
         choices = character.concat(number);
-
-    } else if (confirmCharacter && confirmLowercase) {
+    } 
+    else if (confirmCharacter && confirmLowercase) {
         choices = character.concat(alpha);
-
-    } else if (confirmCharacter && confirmUppercase) {
+    }
+    else if (confirmCharacter && confirmUppercase) {
         choices = character.concat(alpha2);
     }
     else if (confirmLowercase && confirmNumber) {
         choices = alpha.concat(number);
-
-    } else if (confirmLowercase && confirmUppercase) {
+    } 
+    else if (confirmLowercase && confirmUppercase) {
         choices = alpha.concat(alpha2);
-
-    } else if (confirmNumber && confirmUppercase) {
+    } 
+    
+    else if (confirmNumber && confirmUppercase) {
         choices = number.concat(alpha2);
     }
     // Else if for 1 valid
