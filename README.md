@@ -19,11 +19,12 @@ Code a JavaScript password generator web app from starter code. Should prompt fo
 13. Added comments where appropriate
 14. Wrote README and added screenshot and links
 
+- Screenshot
 
 ![image](https://user-images.githubusercontent.com/60651145/185500719-9595f6be-a2a8-4cfb-a384-4f8253e49142.png)
 
-URL to deployed application:
+- URL to deployed application:
 https://ssimonphd.github.io/password-gen/
 
-URL to GitHub repo:
+- URL to GitHub repo:
 https://github.com/SSimonPhd/password-gent
