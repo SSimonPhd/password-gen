@@ -1,6 +1,4 @@
-# 03 JavaScript Password Generator
-
-Module 3 challenge assignment:
+# JavaScript Password Generator
 
 Code a JavaScript password generator web app from starter code. Should prompt for 8 - 120 Characters, lowercase, uppercase, numerics, and special characters.
 
