@@ -25,4 +25,4 @@ Code a JavaScript password generator web app from starter code. Should prompt fo
 https://ssimonphd.github.io/password-gen/
 
 - URL to GitHub repo:
-https://github.com/SSimonPhd/password-gen
+https://github.com/SSimonPhd/password-gen 
